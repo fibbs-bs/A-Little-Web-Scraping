@@ -12,4 +12,4 @@ for fila in palabrasFilas:
     tdPalabraEN = fila.find_all("td",attrs={"class":"column-2"})
     for span in tdPalabraEN:
         palabra = span.find("span").text
-        arch.write(palabra+"\n")
+        arch.write('"'+palabra+'",')
